@@ -1,0 +1,12 @@
+<div>
+	<label for="n1">Nota 1:</label>
+	<input type="number" id="n1" [(ngModel)]="nota1">
+</div>
+<div>
+	<label for="n2">Nota 2:</label>
+	<input type="number" id="n2" [(ngModel)]="nota2">
+</div>
+<button (click)="calcularMedia()">Calcular Média</button>
+<div *ngIf="media !== null">
+	 Média: {{ media }}
+</div>
